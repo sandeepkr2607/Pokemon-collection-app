@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+.border-t-gradient {
+  position: relative;
+  border: none;
+}
+
+.border-t-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  border-top-left-radius: 5.75rem;
+  border-top-right-radius: 5.75rem;
+}
