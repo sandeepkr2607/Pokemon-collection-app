@@ -34,7 +34,7 @@ const PokemonCard = ({ name, types = [], image, stats = [] }) => {
       {/* Toggle Save Button */}
       <button
         onClick={handleToggleSave}
-        className={`absolute top-3 right-3 p-2 rounded-full ${
+        className={`absolute top-3 right-3 p-2 rounded-full cursor-pointer ${
           isSaved ? 'bg-red-500' : 'bg-green-500'
         } text-white text-xs`}
       >
